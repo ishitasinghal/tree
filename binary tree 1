@@ -1,0 +1,6 @@
+#class tree that contains the basic elements of tree
+class Tree(obj):
+    def __init__(self):
+        self.right = None
+        self.left = None
+        self.data = None
