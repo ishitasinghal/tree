@@ -16,4 +16,8 @@ print("Left data", root.left.data)
 print("Root data", root.data)
 print("Right data", root.right.data)
 
+#OUTPUT
 
+Left data left data
+Root data root
+Right data right data
