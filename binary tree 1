@@ -1,5 +1,5 @@
 #class tree that contains the basic elements of tree
-class Tree(obj):
+class Tree(object):
     def __init__(self):
         self.right = None
         self.left = None
@@ -15,4 +15,5 @@ root.right.data = "right data"
 print("Left data", root.left.data)
 print("Root data", root.data)
 print("Right data", root.right.data)
+
 
