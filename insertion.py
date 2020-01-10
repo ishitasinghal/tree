@@ -15,4 +15,14 @@ class Tree:
                     self.right = Tree(data)
                 else:
                     self.right.insert(data)
+        else:
+            self.data = data
+    def printdata(self):
+        if(self.left):
+           self.left.printdata()
+        print(self.data)
+        if(self.right):
+            self.right.printdata()
+
+            
                 
