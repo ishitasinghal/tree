@@ -24,5 +24,13 @@ class Tree:
         if(self.right):
             self.right.printdata()
 
-            
+root = Tree(31)
+root.insert(4)
+root.insert(8)
+root.insert(12)
+root.insert(16)
+root.insert(0)
+root.insert(36)
+root.insert(28)
+print(root.printdata())
                 
