@@ -11,7 +11,7 @@ class Tree:
                 else:
                     self.left.insert(data)
             elif(data>self.data):
-                if(self.data is None):    #if there is no data on the right node
+                if(self.right is None):    #if there is no data on the right node
                     self.right = Tree(data)
                 else:
                     self.right.insert(data)
@@ -33,4 +33,3 @@ root.insert(0)
 root.insert(36)
 root.insert(28)
 print(root.printdata())
-                
