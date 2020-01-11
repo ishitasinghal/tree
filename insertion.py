@@ -3,18 +3,18 @@ class Tree:
         self.right = None
         self.data = data
         self.left = None
-    def inser(self, data):
+    def treein(self, data):
         if(self.data):
             if(data<self.data):
-                if(self.data is None):    #if there is no data on the left node
+                if(self.left is None):    #if there is no data on the left node
                     self.left = Tree(data)
                 else:
-                    self.left.inser(data)
+                    self.left.treein(data)
             elif(data>self.data):
                 if(self.right is None):    #if there is no data on the right node
                     self.right = Tree(data)
                 else:
-                    self.right.inser(data)
+                    self.right.treein(data)
         else:
             self.data = data
     def printdata(self):
@@ -25,11 +25,11 @@ class Tree:
             self.right.printdata()
 
 root = Tree(31)
-root.inser(4)
-root.inser(8)
-root.inser(12)
-root.inser(16)
-root.inser(0)
-root.inser(36)
-root.inser(28)
+root.treein(4)
+root.treein(8)
+root.treein(12)
+root.treein(16)
+root.treein(0)
+root.treein(36)
+root.treein(28)
 print(root.printdata())
