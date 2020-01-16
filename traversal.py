@@ -16,3 +16,4 @@ def preOrder(root):
             preOrder(root.left)
         else:
             preOrder(root.right)
+     print(list1)
