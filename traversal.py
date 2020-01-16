@@ -42,3 +42,8 @@ def preOrder(root):
         print(root.info)
         preOrder(root.left)
         preOrder(root.right)
+        
+def postOrder(root):
+    print(postOrder(root.left))
+    print(postOrder(root.right))
+    print(root.info)
