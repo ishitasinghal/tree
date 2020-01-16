@@ -5,6 +5,35 @@ class Node:
         self.right = None
     def insert(self, data):
         if(self.data):
+            if(data<self.data):
+                if(self.left is None):
+                    self.left = Node(data)
+                else:
+                    self.left.insert(data)
+            elif(data>self.data):
+                if(self.right is None):
+                    self.right = Node(data)
+                else:
+                    self.right.insert(data)
+        else:
+            self.data = data
+            
+                
+    def preOrder(root):
+        if(root):
+            print(root.info, end = " ")
+            preOrder(root.left)
+            preOrder(root.right)
+        
+root = Node(1)
+root.insert(2)
+root.insert(5)
+root.insert(3)
+root.insert(6)
+root.insert(4)
+root.preOrder(self,root)
+
+
             
         
 ##function     
