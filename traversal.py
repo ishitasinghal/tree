@@ -45,7 +45,7 @@ def preOrder(root):
         
 def postOrder(root):
     if(root.left):
-        print(postOrder(root.left))
+        postOrder(root.left)
     elif(root.right):
-        print(postOrder(root.right))
+        postOrder(root.right)
     print(root.info)
