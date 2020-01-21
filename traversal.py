@@ -48,4 +48,5 @@ def postOrder(root):
         postOrder(root.left)
     elif(root.right):
         postOrder(root.right)
-    print(root.info)
+    print(root.info, end = " ")
+
