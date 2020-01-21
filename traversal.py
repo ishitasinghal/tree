@@ -24,6 +24,14 @@ class Node:
             print(root.info, end = " ")
             preOrder(root.left)
             preOrder(root.right)
+            
+    def postOrder(root):
+    if(root.left):
+        postOrder(root.left)
+    if(root.right):
+        postOrder(root.right)
+    print(root.info, end = " ")
+
         
 root = Node(1)
 root.insert(2)
@@ -32,6 +40,7 @@ root.insert(3)
 root.insert(6)
 root.insert(4)
 root.preOrder(self,root)
+root.postOrder(self, root)
 
 
             
@@ -46,7 +55,8 @@ def preOrder(root):
 def postOrder(root):
     if(root.left):
         postOrder(root.left)
-    elif(root.right):
+    if(root.right):
         postOrder(root.right)
     print(root.info, end = " ")
+
 
