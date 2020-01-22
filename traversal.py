@@ -64,4 +64,4 @@ def inOrder(root):
         inOrder(root.left)
     print(root.info)
     if(root.right):
-        inOrder(root.data)
+        inOrder(root.right)
