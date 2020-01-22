@@ -59,4 +59,9 @@ def postOrder(root):
         postOrder(root.right)
     print(root.info, end = " ")
 
-
+def inOrder(root):
+    if(root.left):
+        inOrder(root.left)
+    print(root.info)
+    if(root.right):
+        inOrder(root.data)
