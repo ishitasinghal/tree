@@ -1,0 +1,18 @@
+Problem Statement
+
+You are given a pointer to the root of a binary tree. 
+Print the top view of the binary tree.
+Example:
+ 1
+    \
+     2
+      \
+       5
+      /  \
+     3    6
+      \
+       4
+       
+       
+Output:
+Top View : 1 -> 2 -> 5 -> 6
