@@ -32,4 +32,14 @@ if root is None:    #checks if the root is null
         hdist = root.level
         if hdist not in dict1:
             dict1[hdist] = root.data
+        if(root.left):
+            root.left.level = hdist - 1
+            queue1.append(root.left)
+        if(root.right):
+            root.right.level = hdist +1
+            queue1.append(root.right)
+        queue1.pop(0)
+    for i in sorted(dict1):
+        print(dict1[i] , end = " ")
+
     
