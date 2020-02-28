@@ -20,8 +20,16 @@ Top View : 1 -> 2 -> 5 -> 6
 CODE
 #just the function
 
-def topView(root):
-    if root.left():
-        topView(root.left)
-    print(root.info)
+if root is None:    #checks if the root is null
+        return
+    queue1 = []
+    dict1 = {}
+    hdist = 0
+    root.level = hdist
+    queue1.append(root)
+    while(len(queue1)):
+        root = queue1[0]
+        hdist = root.level
+        if hdist not in dict1:
+            dict1[hdist] = root.data
     
