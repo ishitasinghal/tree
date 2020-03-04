@@ -17,3 +17,14 @@ Example:
          
 Output:
 1 -> 2 -> 5 -> 3 -> 6 -> 4
+
+Function
+
+from collections import deque
+def levelOrder(root):
+    q = deque([root])
+    while q:
+        n = q.popleft()
+        if n:
+            print(n.info, end=' ')
+            q.extend([n.left, n.right])
